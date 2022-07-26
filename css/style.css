@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+:root {
+  --primary-color: #ffc300;
+  --secondary-gray: #eee;
+}
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+.active {
+  color: var(--primary-color);
+}
+body .home {
+  position: relative;
+  min-height: 100vh;
+  background: center no-repeat url(/css/img/house_0.jpg), rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-attachment: fixed;
+  animation: imageChange ease-in-out 10s infinite;
+  background-blend-mode: multiply;
+}
+@keyframes imageChange {
+  0% {
+    background-image: url(/css/img/house_0.jpg);
+  }
+  33% {
+    background-image: url(/css/img/house_1.jpg);
+  }
+  66% {
+    background-image: url(/css/img/house_2.jpg);
+  }
+  99% {
+    background-image: url(/css/img/house_3.jpg);
+  }
+}
+body .home .nav {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 1em;
+}
+body .home .nav ul {
+  display: flex;
+  list-style: none;
+}
+body .home .nav ul li {
+  font-size: 1rem;
+  margin-right: 1.5rem;
+}
+body .home .heading-home {
+  min-height: 70vh;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  padding: 0vw 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body .home .heading-home h3 {
+  padding-top: 0.3em;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+body .home .arrow-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: double-arrow 1s ease-in-out infinite;
+}
+body .home .arrow-img img {
+  transform: rotate(180deg);
+}
+@keyframes double-arrow {
+  50% {
+    transform: translateY(15px);
+  }
+}
+.whatsapp {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+}
+/* about section */
+body .about {
+  background-color: var(--secondary-gray);
+}
+body .about .about-heading {
+  font-size: 1.2rem;
+  text-align: center;
+}
+body .about .about-heading h1 {
+  color: var(--primary-color);
+  padding-top: 5vw;
+  padding-bottom: 2vw;
+}
+body .about .about-content {
+  display: flex;
+  justify-content: center;
+}
+body .about .about-content p {
+  max-width: 1200px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 2em;
+}
+body .about .icons {
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+}
+body .about .icon-content .about-icons-flex {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+body .about .icon-content .about-icons-flex > p {
+  margin: 0em 1em;
+  font-size: 1.3rem;
+}
+body .services .appointment-service button,
+body .about .icon-content .about-icons-flex > button {
+  padding: 0.8rem 1rem;
+  background-color: var(--primary-color);
+  border-radius: 3px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+/* Services */
+body .services {
+  background-color: white;
+}
+body .services .heading {
+  color: var(--primary-color);
+  padding-top: 5vw;
+  padding-bottom: 2vw;
+  text-align: center;
+}
+body .services .grid-services {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+body .services .grid-services .service-item {
+  padding: 0em 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 400px;
+}
+body .services .grid-services .service-item > * {
+  margin: 0.4em 0em;
+}
+body .services .appointment-service {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body .services .appointment-service .appointment {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+body .services .appointment-service .appointment > h2 {
+  padding-bottom: 1rem;
+}
+body .services .appointment-service button {
+  margin-right: 1em;
+  margin-left: 1rem;
+}
+@media screen and (max-width: 600px) {
+  * {
+    border: 1px solid red;
+  }
+  nav {
+    display: none;
+  }
+  html {
+    font-size: 11px;
+  }
+}
