@@ -81,6 +81,7 @@
 }
 .info-card .info-box {
   padding: 1rem;
+  margin-left: 0.8rem;
 }
 @media screen and (max-width: 1160px) {
   .contact {
@@ -89,10 +90,12 @@
     align-items: center;
     margin: 0;
   }
+
   .form-container {
     margin: 3rem 0rem;
   }
   .info-container {
+    max-height: 450px;
     padding: 1.5rem;
     width: 70%;
     margin: 0.5rem auto;

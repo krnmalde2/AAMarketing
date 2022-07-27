@@ -28,7 +28,7 @@ a {
   color: white;
 }
 .pressed {
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
 }
 .active {
   color: var(--primary-color) !important;
