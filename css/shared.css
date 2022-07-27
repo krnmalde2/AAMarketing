@@ -27,6 +27,9 @@ a {
   cursor: pointer;
   color: white;
 }
+.pressed {
+  color: var(--primary-color);
+}
 .active {
   color: var(--primary-color) !important;
 }

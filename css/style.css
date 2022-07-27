@@ -45,7 +45,7 @@ body .services {
 }
 body .services .heading {
   color: var(--primary-color);
-  padding: 5vw 0vw;
+  padding: 3vw 0vw;
   font-size: 1.4rem;
   text-align: center;
 }
